@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blissri the Bakeshoppe — Freshly Baked Happiness in Lantana</title>
-  <meta name="description" content="Blissri the Bakeshoppe — gourmet cookies, cupcakes, breakfast treats and dessert bars baked fresh in Lantana, FL. Order online for pickup." />
+  <meta name="description" content="Blissri the Bakeshoppe — gourmet cookies, cupcakes, dessert bars and hand-spun shakes baked fresh in Lantana, FL. Order online for pickup." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧁</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cg%20fill%3D%22%23ef7fae%22%3E%3Cellipse%20cx%3D%2219%22%20cy%3D%2223%22%20rx%3D%2215%22%20ry%3D%2211%22%20transform%3D%22rotate(-18%2019%2023)%22%2F%3E%3Cellipse%20cx%3D%2220%22%20cy%3D%2242%22%20rx%3D%2211%22%20ry%3D%228%22%20transform%3D%22rotate(20%2020%2042)%22%2F%3E%3Cellipse%20cx%3D%2245%22%20cy%3D%2223%22%20rx%3D%2215%22%20ry%3D%2211%22%20transform%3D%22rotate(18%2045%2023)%22%2F%3E%3Cellipse%20cx%3D%2244%22%20cy%3D%2242%22%20rx%3D%2211%22%20ry%3D%228%22%20transform%3D%22rotate(-20%2044%2042)%22%2F%3E%3C%2Fg%3E%3Cg%20stroke%3D%22%231e3a8a%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M32%2015%20C34%2027%2034%2037%2032%2050%22%20stroke-width%3D%223.4%22%2F%3E%3Cpath%20d%3D%22M32%2016%20C29%2011%2026%209%2023%208%22%20stroke-width%3D%222%22%2F%3E%3Cpath%20d%3D%22M32%2016%20C35%2011%2038%209%2041%208%22%20stroke-width%3D%222%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E" />
 </head>
 <body>
   <header class="site-header" id="site-header"></header>
@@ -19,7 +19,7 @@
       <div class="hero-copy">
         <span class="eyebrow">Baked fresh in Lantana</span>
         <h1>A little slice of <span class="accent">bliss</span> in every bite.</h1>
-        <p>Gourmet cookies, dreamy cupcakes and warm breakfast treats — handmade from scratch with real ingredients and a whole lot of love.</p>
+        <p>Gourmet cookies, dreamy cupcakes, dessert bars and hand-spun shakes — made from scratch with real ingredients and a whole lot of love.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="order.html">Order Now</a>
           <a class="btn btn-outline" href="menu.html">View the Menu</a>
@@ -31,7 +31,7 @@
         </div>
       </div>
       <div class="hero-art">
-        <span class="emoji">🍪</span>
+        <img src="images/hero/strawberry-milkshake.webp" alt="Blissri hand-spun strawberry milkshake topped with whipped cream" loading="eager" />
         <span class="badge b1"><span>🧁</span> Fresh daily</span>
         <span class="badge b2"><span>🎁</span> Build a Bliss Box</span>
       </div>
@@ -50,14 +50,12 @@
   <section class="section">
     <div class="container">
       <div class="section-head reveal">
-        <span class="eyebrow">Customer favourites</span>
-        <h2>This Week's Bestsellers</h2>
-        <p>The treats our neighbours keep coming back for. Rotating flavours, always fresh.</p>
+        <span class="eyebrow">Fresh this week</span>
+        <h2>This Week's Lineup</h2>
+        <p>Our rotating small-batch flavours and signatures — baked fresh and ready to order.</p>
       </div>
-      <div class="cards">
-        <article class="card reveal"><div class="thumb">🍪</div><div class="body"><span class="tag">Bestseller</span><h3>Classic Chocolate Chip</h3><p>Gooey center, melty chocolate, sea-salt finish.</p><div class="meta"><span class="price">$5.59</span><a class="btn btn-ghost btn-sm" href="order.html">Order</a></div></div></article>
-        <article class="card reveal"><div class="thumb">🩷</div><div class="body"><span class="tag">Signature</span><h3>Pink Sugar Cookie</h3><p>Soft sugar cookie with silky pink almond frosting.</p><div class="meta"><span class="price">$5.59</span><a class="btn btn-ghost btn-sm" href="order.html">Order</a></div></div></article>
-        <article class="card reveal"><div class="thumb">🧁</div><div class="body"><span class="tag">Fresh</span><h3>Vanilla Bean Cupcake</h3><p>Fluffy cake swirled with whipped vanilla buttercream.</p><div class="meta"><span class="price">$4.79</span><a class="btn btn-ghost btn-sm" href="order.html">Order</a></div></div></article>
+      <div class="cards" id="homeFeatured">
+        <p class="muted center" style="grid-column:1/-1;padding:30px;">Loading this week's treats…</p>
       </div>
       <div class="center" style="margin-top:40px;"><a class="btn btn-outline" href="menu.html">See the full menu →</a></div>
     </div>
@@ -67,7 +65,7 @@
     <div class="container">
       <div class="section-head reveal"><span class="eyebrow">Sweet words</span><h2>Loved by our community</h2></div>
       <div class="quotes">
-        <div class="quote reveal"><div class="stars">★★★★★</div><p>"Best cookies in Lantana, hands down. The pink sugar cookie is unreal."</p><div class="who"><span class="av">A</span><div><strong>Amara R.</strong><span>Local regular</span></div></div></div>
+        <div class="quote reveal"><div class="stars">★★★★★</div><p>"Best cookies in Lantana, hands down. The Nutella Lava is unreal."</p><div class="who"><span class="av">A</span><div><strong>Amara R.</strong><span>Local regular</span></div></div></div>
         <div class="quote reveal"><div class="stars">★★★★★</div><p>"Ordered a Bliss Box for the office and everyone raved. Easy online pickup too."</p><div class="who"><span class="av">J</span><div><strong>Jonah P.</strong><span>Bliss Box order</span></div></div></div>
         <div class="quote reveal"><div class="stars">★★★★★</div><p>"The cupcakes are bakery-perfect and the staff are the sweetest. A gem!"</p><div class="who"><span class="av">M</span><div><strong>Mei L.</strong><span>Cupcake fan</span></div></div></div>
       </div>
@@ -87,5 +85,30 @@
   <footer class="site-footer" id="site-footer"></footer>
   <script src="js/site.js"></script>
   <script src="js/cart.js"></script>
+  <script>
+    // Render "This Week's Lineup" on the homepage from the live menu.
+    (function () {
+      function esc(s){return String(s).replace(/[&<>"]/g,function(c){return({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c];});}
+      function thumb(it){
+        return it.img
+          ? '<img src="' + esc(it.img) + '" alt="' + esc(it.name) + '" loading="lazy">'
+          : (it.emoji || "🧁");
+      }
+      document.addEventListener("blissri:menu-ready", function (e) {
+        var host = document.getElementById("homeFeatured");
+        if (!host) return;
+        var feat = (e.detail.items || []).filter(function (it) { return it.featured; }).slice(0, 6);
+        if (!feat.length) { host.innerHTML = ""; return; }
+        host.innerHTML = feat.map(function (it) {
+          var badge = it.badge ? '<span class="tag">' + esc(it.badge) + '</span>' : '';
+          return '<article class="card reveal visible"><div class="thumb">' + thumb(it) + '</div>' +
+            '<div class="body">' + badge + '<h3>' + esc(it.name) + '</h3>' +
+            '<p>' + esc(it.desc || "") + '</p>' +
+            '<div class="meta"><span class="price">$' + Number(it.price).toFixed(2) + '</span>' +
+            '<a class="btn btn-ghost btn-sm" href="order-lantana.html">Order</a></div></div></article>';
+        }).join("");
+      });
+    })();
+  </script>
 </body>
 </html>

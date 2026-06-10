@@ -14,10 +14,25 @@
     { href: "contact.html", label: "Contact" },
   ];
 
+  var BUTTERFLY = '' +
+    '<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">' +
+      '<g fill="#ef7fae">' +
+        '<ellipse cx="19" cy="23" rx="15" ry="11" transform="rotate(-18 19 23)"/>' +
+        '<ellipse cx="20" cy="42" rx="11" ry="8" transform="rotate(20 20 42)"/>' +
+        '<ellipse cx="45" cy="23" rx="15" ry="11" transform="rotate(18 45 23)"/>' +
+        '<ellipse cx="44" cy="42" rx="11" ry="8" transform="rotate(-20 44 42)"/>' +
+      '</g>' +
+      '<g stroke="#1e3a8a" fill="none" stroke-linecap="round">' +
+        '<path d="M32 15 C34 27 34 37 32 50" stroke-width="3.4"/>' +
+        '<path d="M32 16 C29 11 26 9 23 8" stroke-width="2"/>' +
+        '<path d="M32 16 C35 11 38 9 41 8" stroke-width="2"/>' +
+      '</g>' +
+    '</svg>';
+
   var BRAND = '' +
     '<a class="brand" href="index.html">' +
-      '<span class="logo">B</span>' +
-      '<span class="brand-text"><strong>Blissri</strong><span>The Bakeshoppe</span></span>' +
+      '<span class="logo">' + BUTTERFLY + '</span>' +
+      '<span class="brand-text"><strong>blissri</strong><span class="script">Bakeshoppe</span></span>' +
     '</a>';
 
   function currentPage() {
@@ -125,6 +140,16 @@
   }
 
   window.Blissri = { getMenu: getMenu, money: money };
+
+  // Load the script font used by the wordmark (once, on every page).
+  (function loadBrandFont() {
+    if (document.getElementById("blissri-brandfont")) return;
+    var l = document.createElement("link");
+    l.id = "blissri-brandfont";
+    l.rel = "stylesheet";
+    l.href = "https://fonts.googleapis.com/css2?family=Satisfy&display=swap";
+    document.head.appendChild(l);
+  })();
 
   document.addEventListener("DOMContentLoaded", function () {
     var header = document.getElementById("site-header");
