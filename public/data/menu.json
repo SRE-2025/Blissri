@@ -26,11 +26,6 @@
       "emoji": "🧁"
     },
     {
-      "id": "breakfast",
-      "name": "Breakfast",
-      "emoji": "🥐"
-    },
-    {
       "id": "drinks",
       "name": "Drinks",
       "emoji": "🥤"
@@ -50,7 +45,8 @@
       "emoji": "🍪",
       "img": null,
       "badge": "Signature",
-      "desc": "A soft brown sugar dough with a rich, caramel-like sweetness, balanced by smooth semi-sweet chocolate chips for a perfectly classic treat."
+      "desc": "A soft brown sugar dough with a rich, caramel-like sweetness, balanced by smooth semi-sweet chocolate chips for a perfectly classic treat.",
+      "featured": true
     },
     {
       "id": "ck-party-cake",
@@ -60,7 +56,8 @@
       "emoji": "🎉",
       "img": null,
       "badge": "Signature",
-      "desc": "A celebration in every bite! Buttery cake-flavored dough packed with white chocolate chips and rainbow sprinkles, topped with a swirl of fluffy whipped vanilla buttercream."
+      "desc": "A celebration in every bite! Buttery cake-flavored dough packed with white chocolate chips and rainbow sprinkles, topped with a swirl of fluffy whipped vanilla buttercream.",
+      "featured": true
     },
     {
       "id": "ck-doodle",
@@ -70,7 +67,8 @@
       "emoji": "🌀",
       "img": null,
       "badge": "Signature",
-      "desc": "A soft, spiced delight infused with cinnamon and rolled in cinnamon sugar, topped with a swirl of creamy, tangy cream cheese frosting."
+      "desc": "A soft, spiced delight infused with cinnamon and rolled in cinnamon sugar, topped with a swirl of creamy, tangy cream cheese frosting.",
+      "featured": true
     },
     {
       "id": "ck-salty-caramel-pistachio",
@@ -252,53 +250,6 @@
       "img": null,
       "badge": "Specialty",
       "desc": "A rich chocolate cupcake filled with creamy peanut butter, topped with smooth peanut butter frosting and a drizzle of chocolate ganache."
-    },
-    {
-      "id": "bk-blueberry-muffin",
-      "category": "breakfast",
-      "name": "Blueberry Muffin",
-      "price": 5.5,
-      "emoji": "🫐",
-      "img": "/images/products/blueberry-muffin.webp",
-      "badge": "Signature",
-      "preorder": false,
-      "desc": "A soft, buttery muffin bursting with juicy blueberries, topped with a golden buttery crumble for the perfect balance of tender and crisp.",
-      "featured": true
-    },
-    {
-      "id": "bk-banana-bread",
-      "category": "breakfast",
-      "name": "V/GF Banana Bread Muffin",
-      "price": 5.5,
-      "emoji": "🍌",
-      "img": "/images/products/banana-bread-muffin.webp",
-      "badge": "Vegan · GF",
-      "preorder": false,
-      "desc": "A soft, bakery-style banana muffin made vegan and gluten-free, packed with ripe banana flavor and melty chocolate chips.",
-      "featured": true
-    },
-    {
-      "id": "bk-coffee-cake",
-      "category": "breakfast",
-      "name": "Coffee Cake Muffin",
-      "price": 5.5,
-      "emoji": "🧁",
-      "img": "/images/products/coffee-cake-muffin.webp",
-      "badge": "Signature",
-      "preorder": false,
-      "desc": "A tender vanilla muffin layered with cinnamon brown sugar and crowned with a crisp streusel topping, then lightly glazed. Cozy, nostalgic, and perfectly balanced.",
-      "featured": true
-    },
-    {
-      "id": "bk-cinnie-buns",
-      "category": "breakfast",
-      "name": "Cinnie Buns",
-      "price": 5.5,
-      "emoji": "🌀",
-      "img": null,
-      "badge": "Saturday Special",
-      "preorder": false,
-      "desc": "Soft, buttery brioche swirled with warm cinnamon sugar and baked until pillowy, finished with a silky vanilla bean glaze that melts into every layer."
     },
     {
       "id": "dr-iced-coffee",
