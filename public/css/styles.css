@@ -280,6 +280,54 @@ h1,h2,h3,h4 { font-family: var(--font-head); line-height: 1.15; color: var(--bro
 .socials a:hover { background:var(--pink); transform:translateY(-2px); }
 .footer-bottom { border-top:1px solid rgba(255,255,255,.12); padding-top:22px; text-align:center; font-size:.86rem; color:#c9b3a5; }
 
+/* ===========================================================
+   CRUMBL-STYLE ORDERING ENHANCEMENTS
+   =========================================================== */
+/* "This week's lineup" banner */
+.week-band { background:linear-gradient(180deg,var(--pink-soft),var(--cream)); border-radius:var(--radius); padding:30px 26px 8px; margin-bottom:34px; box-shadow:var(--shadow-sm); }
+.week-band .week-head { text-align:center; margin-bottom:24px; }
+.week-band .week-head .kicker { display:inline-block; background:var(--pink-dark); color:#fff; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; font-size:.7rem; padding:6px 16px; border-radius:999px; margin-bottom:12px; }
+.week-band .week-head h2 { font-size:clamp(1.7rem,4vw,2.4rem); }
+.week-band .week-head p { color:var(--brown-soft); margin-top:6px; }
+.week-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; padding-bottom:22px; }
+
+/* Crumbl-style square product card */
+.product.crumbl { cursor:pointer; text-align:center; border-radius:22px; }
+.product.crumbl .pthumb { height:230px; font-size:6rem; background:radial-gradient(circle at 50% 38%, #fff 0%, var(--cream-2) 70%); }
+.product.crumbl .pbody { align-items:center; padding:20px; }
+.product.crumbl .pbody h3 { font-size:1.3rem; }
+.product.crumbl .pbody p { text-align:center; }
+.product.crumbl .pmeta { width:100%; justify-content:center; gap:14px; }
+.product .tap-hint { font-size:.74rem; color:var(--muted); margin-top:8px; display:flex; align-items:center; gap:5px; justify-content:center; }
+
+/* Product detail modal */
+.pmodal-overlay { position:fixed; inset:0; background:rgba(58,42,32,.5); display:none; align-items:center; justify-content:center; padding:20px; z-index:120; opacity:0; transition:opacity .2s; }
+.pmodal-overlay.open { display:flex; opacity:1; }
+.pmodal { background:var(--white); border-radius:24px; max-width:760px; width:100%; max-height:92vh; overflow:auto; box-shadow:var(--shadow-lg); transform:scale(.96); transition:transform .2s; }
+.pmodal-overlay.open .pmodal { transform:none; }
+.pmodal-grid { display:grid; grid-template-columns:1fr 1fr; }
+.pmodal-img { background:radial-gradient(circle at 50% 40%, #fff, var(--cream-2)); display:grid; place-items:center; font-size:9rem; min-height:320px; border-radius:24px 0 0 24px; }
+.pmodal-img img { width:100%; height:100%; object-fit:cover; border-radius:24px 0 0 24px; }
+.pmodal-info { padding:32px 30px; position:relative; display:flex; flex-direction:column; }
+.pmodal-close { position:absolute; top:14px; right:16px; background:var(--cream-2); border:none; width:36px; height:36px; border-radius:50%; font-size:1.3rem; cursor:pointer; color:var(--brown); line-height:1; }
+.pmodal-badge { align-self:flex-start; background:var(--pink-soft); color:var(--pink-dark); font-weight:700; font-size:.7rem; letter-spacing:1px; text-transform:uppercase; padding:5px 12px; border-radius:999px; margin-bottom:12px; }
+.pmodal-info h2 { font-size:1.9rem; margin-bottom:10px; }
+.pmodal-info .pdesc { color:var(--brown-soft); margin-bottom:14px; }
+.pmodal-info .pprice2 { font-family:var(--font-head); font-size:1.6rem; color:var(--pink-dark); font-weight:700; margin-bottom:18px; }
+.pmodal-info .pnutri { font-size:.82rem; color:var(--muted); border-top:1px dashed rgba(90,56,37,.18); padding-top:14px; margin-bottom:20px; }
+.qty-row { display:flex; align-items:center; gap:16px; margin-top:auto; }
+.qty-row .stepper { background:var(--cream-2); }
+.qty-row .stepper button { color:var(--brown); }
+.qty-row .stepper .q { color:var(--brown); }
+.qty-row .add-to-box { flex:1; }
+
+@media (max-width:680px){
+  .week-grid { grid-template-columns:1fr; }
+  .pmodal-grid { grid-template-columns:1fr; }
+  .pmodal-img { border-radius:24px 24px 0 0; min-height:220px; font-size:6rem; }
+  .pmodal-img img { border-radius:24px 24px 0 0; }
+}
+
 /* ---------- Reveal ---------- */
 .reveal { opacity:0; transform:translateY(24px); transition:opacity .6s, transform .6s; }
 .reveal.visible { opacity:1; transform:none; }
