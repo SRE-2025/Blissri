@@ -31,6 +31,11 @@
       "emoji": "🍰"
     },
     {
+      "id": "drinks",
+      "name": "Drinks",
+      "emoji": "🥤"
+    },
+    {
       "id": "boxes",
       "name": "Bliss Boxes",
       "emoji": "🎁"
@@ -45,8 +50,7 @@
       "emoji": "🍪",
       "img": null,
       "badge": "Bestseller",
-      "desc": "Warm, gooey center with melty semi-sweet chocolate chips and a sea-salt finish.",
-      "featured": true
+      "desc": "Warm, gooey center with melty semi-sweet chocolate chips and a sea-salt finish."
     },
     {
       "id": "ck-sugar",
@@ -87,8 +91,7 @@
       "emoji": "🖤",
       "img": null,
       "badge": "Premium",
-      "desc": "Chunks of chocolate sandwich cookie folded into rich cream-cheese dough.",
-      "featured": true
+      "desc": "Chunks of chocolate sandwich cookie folded into rich cream-cheese dough."
     },
     {
       "id": "ck-peanut-butter",
@@ -98,8 +101,7 @@
       "emoji": "🥜",
       "img": null,
       "badge": "Premium",
-      "desc": "Peanut butter cookie stuffed with melted chocolate peanut butter cups.",
-      "featured": true
+      "desc": "Peanut butter cookie stuffed with melted chocolate peanut butter cups."
     },
     {
       "id": "ck-red-velvet",
@@ -109,8 +111,7 @@
       "emoji": "❤️",
       "img": null,
       "badge": "Premium",
-      "desc": "Decadent red velvet cookie crowned with cream-cheese frosting.",
-      "featured": true
+      "desc": "Decadent red velvet cookie crowned with cream-cheese frosting."
     },
     {
       "id": "cp-vanilla",
@@ -160,8 +161,7 @@
       "emoji": "🖤",
       "img": null,
       "badge": "Premium",
-      "desc": "Chocolate cupcake loaded with cookie crumbles and cookies-and-cream frosting.",
-      "featured": true
+      "desc": "Chocolate cupcake loaded with cookie crumbles and cookies-and-cream frosting."
     },
     {
       "id": "bk-cinn-roll",
@@ -189,9 +189,10 @@
       "name": "Blueberry Muffin",
       "price": 5.99,
       "emoji": "🫐",
-      "img": null,
+      "img": "/images/products/blueberry-muffin.webp",
       "badge": "",
-      "desc": "Tender muffin bursting with blueberries and a crunchy streusel top."
+      "desc": "Tender muffin bursting with blueberries and a crunchy streusel top.",
+      "featured": true
     },
     {
       "id": "bk-scone",
@@ -272,6 +273,50 @@
       "img": null,
       "badge": "Build your own",
       "desc": "Mix any 6 treats — great for the office or a small celebration."
+    },
+    {
+      "id": "bk-coffee-cake",
+      "category": "breakfast",
+      "name": "Coffee Cake Muffin",
+      "price": 5.99,
+      "emoji": "🧁",
+      "img": "/images/products/coffee-cake-muffin.webp",
+      "badge": "",
+      "desc": "Cinnamon streusel-topped muffin finished with a sweet vanilla glaze.",
+      "featured": true
+    },
+    {
+      "id": "bk-banana-bread",
+      "category": "breakfast",
+      "name": "Banana Bread Muffin (V/GF)",
+      "price": 6.49,
+      "emoji": "🍌",
+      "img": "/images/products/banana-bread-muffin.webp",
+      "badge": "Vegan · GF",
+      "desc": "Vegan & gluten-free banana muffin loaded with dark chocolate chips.",
+      "featured": true
+    },
+    {
+      "id": "dr-iced-coffee",
+      "category": "drinks",
+      "name": "Iced Coffee",
+      "price": 4.95,
+      "emoji": "☕",
+      "img": "/images/products/iced-coffee.webp",
+      "badge": "",
+      "desc": "Smooth cold-brewed coffee over ice with your choice of cream.",
+      "featured": true
+    },
+    {
+      "id": "dr-strawberry-shake",
+      "category": "drinks",
+      "name": "Strawberry Milkshake",
+      "price": 7.49,
+      "emoji": "🥤",
+      "img": "/images/products/strawberry-milkshake.webp",
+      "badge": "Fan favorite",
+      "desc": "Hand-spun strawberry milkshake topped with fresh whipped cream.",
+      "featured": true
     }
   ]
 }
