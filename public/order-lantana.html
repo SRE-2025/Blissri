@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order — Lantana | Blissri the Bakeshoppe</title>
+  <meta name="description" content="Build your order from Blissri's freshly baked cookies, cupcakes, breakfast treats and dessert bars. Pickup in Lantana." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧁</text></svg>" />
+</head>
+<body>
+  <header class="site-header" id="site-header"></header>
+
+  <section class="page-hero" style="padding:44px 0;">
+    <div class="container">
+      <h1>Order for Pickup</h1>
+      <p>Tap “Add” to build your box — then checkout securely with Square.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:34px;">
+    <div class="container">
+      <div class="location-banner">
+        <div class="loc">
+          <span class="pin">📍</span>
+          <div><strong>Blissri — Lantana</strong><span>Lantana, FL · Open Tue–Sat 11am–7pm</span></div>
+        </div>
+        <span class="pickup-pill">🛍️ Pickup in-store</span>
+      </div>
+
+      <div class="tabs" id="catTabs"><!-- category tabs injected --></div>
+      <div class="product-grid" id="productGrid">
+        <p class="muted center" style="grid-column:1/-1; padding:40px;">Loading fresh treats… 🧁</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="js/site.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/order.js"></script>
+</body>
+</html>

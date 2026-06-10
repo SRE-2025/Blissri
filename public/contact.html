@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Blissri the Bakeshoppe</title>
+  <meta name="description" content="Get in touch with Blissri the Bakeshoppe in Lantana, FL." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧁</text></svg>" />
+</head>
+<body>
+  <header class="site-header" id="site-header"></header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Questions, feedback or just want to say hi? We'd love to hear from you.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <div class="info-card">
+          <h3 style="margin-bottom:18px;">Visit the shoppe</h3>
+          <ul class="info-list">
+            <li><span class="ico">📍</span><span><strong>Location</strong><span>Lantana, FL</span></span></li>
+            <li><span class="ico">🕖</span><span><strong>Hours</strong><span>Tue–Sat 11am–7pm · Sun–Mon closed</span></span></li>
+            <li><span class="ico">✉️</span><span><strong>Email</strong><span><a href="mailto:hello@blissribakeshoppe.com">hello@blissribakeshoppe.com</a></span></span></li>
+            <li><span class="ico">🛍️</span><span><strong>Online orders</strong><span><a href="order.html">Order for pickup</a></span></span></li>
+          </ul>
+        </div>
+        <div class="map">🗺️ &nbsp; Lantana, FL</div>
+      </div>
+
+      <div class="reveal">
+        <form class="form-card" id="order-form" novalidate>
+          <h3 style="margin-bottom:6px;">Send us a message</h3>
+          <p class="muted" style="margin-bottom:22px; font-size:.92rem;">We'll reply within one business day.</p>
+          <div class="form-row">
+            <div class="field"><label for="name">Name *</label><input type="text" id="name" name="name" required /><span class="error">Please enter your name.</span></div>
+            <div class="field"><label for="phone">Phone</label><input type="tel" id="phone" name="phone" /><span class="error">Please enter a valid phone number.</span></div>
+          </div>
+          <div class="field"><label for="email">Email *</label><input type="email" id="email" name="email" required /><span class="error">Please enter a valid email address.</span></div>
+          <div class="field"><label for="message">Message *</label><textarea id="message" name="message" placeholder="How can we help?" required></textarea><span class="error">Please add a message.</span></div>
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          <div class="form-note" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="js/site.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/forms.js"></script>
+</body>
+</html>
