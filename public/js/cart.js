@@ -70,7 +70,7 @@
     drawer.className = "cart-drawer";
     drawer.setAttribute("aria-hidden", "true");
     drawer.innerHTML =
-      '<div class="cart-head"><h3>Your Order 🛍️</h3>' +
+      '<div class="cart-head"><h3>Your Box 🩷</h3>' +
         '<button class="cart-close" id="cartClose" aria-label="Close cart">×</button></div>' +
       '<div class="cart-body" id="cartBody"></div>' +
       '<div class="cart-foot" id="cartFoot"></div>';
@@ -99,9 +99,9 @@
     var ids = Object.keys(cart);
 
     if (ids.length === 0) {
-      bodyEl.innerHTML = '<div class="cart-empty"><div class="big">🧁</div>' +
-        '<p>Your cart is empty.<br>Add some treats to get started!</p>' +
-        '<a class="btn btn-primary btn-sm" style="margin-top:16px;" href="order.html">Browse treats</a></div>';
+      bodyEl.innerHTML = '<div class="cart-empty"><div class="big">🎁</div>' +
+        '<p>Your box is empty.<br>Add some treats to get started!</p>' +
+        '<a class="btn btn-primary btn-sm" style="margin-top:16px;" href="order-lantana.html">Browse treats</a></div>';
       footEl.innerHTML = "";
       return;
     }

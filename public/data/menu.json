@@ -1,6 +1,6 @@
 {
   "currency": "USD",
-  "note": "This is the single source of truth for products & prices. Prices are in dollars. The server re-prices every order from this file so customers cannot tamper with totals. Edit names, prices, emoji or add an `img` URL to customize.",
+  "note": "This is the single source of truth for products & prices. Prices are in dollars. The server re-prices every order from this file so customers cannot tamper with totals. Edit names, prices, emoji or add an `img` URL to customize.  PRICES BELOW ARE PLACEHOLDERS pending the real price list.",
   "locations": [
     {
       "id": "lantana",
@@ -10,39 +10,288 @@
     }
   ],
   "categories": [
-    { "id": "cookies",      "name": "Cookies",      "emoji": "🍪" },
-    { "id": "cupcakes",     "name": "Cupcakes",     "emoji": "🧁" },
-    { "id": "breakfast",    "name": "Breakfast",    "emoji": "🥐" },
-    { "id": "dessert-bars", "name": "Dessert Bars", "emoji": "🍰" },
-    { "id": "boxes",        "name": "Bliss Boxes",  "emoji": "🎁" }
+    {
+      "id": "cookies",
+      "name": "Cookies",
+      "emoji": "🍪"
+    },
+    {
+      "id": "dessert-bars",
+      "name": "Dessert Bars",
+      "emoji": "🍫"
+    },
+    {
+      "id": "cupcakes",
+      "name": "Cupcakes",
+      "emoji": "🧁"
+    },
+    {
+      "id": "drinks",
+      "name": "Drinks",
+      "emoji": "🥤"
+    },
+    {
+      "id": "boxes",
+      "name": "Bliss Boxes",
+      "emoji": "🎁"
+    }
   ],
   "items": [
-    { "id": "ck-choc-chip",     "category": "cookies",      "name": "Classic Chocolate Chip",   "price": 5.59, "emoji": "🍪", "img": null, "badge": "Bestseller", "desc": "Warm, gooey center with melty semi-sweet chocolate chips and a sea-salt finish." },
-    { "id": "ck-sugar",         "category": "cookies",      "name": "Pink Sugar Cookie",        "price": 5.59, "emoji": "🩷", "img": null, "badge": "Signature", "desc": "Soft chilled sugar cookie topped with our silky pink almond frosting." },
-    { "id": "ck-snickerdoodle", "category": "cookies",      "name": "Snickerdoodle",            "price": 5.59, "emoji": "🍪", "img": null, "badge": "", "desc": "Buttery cinnamon-sugar cookie, crisp at the edge and chewy in the middle." },
-    { "id": "ck-mm",            "category": "cookies",      "name": "M&M Cookie",               "price": 5.59, "emoji": "🌈", "img": null, "badge": "", "desc": "Loaded with rainbow candy-coated chocolate in a soft vanilla cookie." },
-    { "id": "ck-cookies-cream", "category": "cookies",      "name": "Cookies & Cream",          "price": 6.29, "emoji": "🖤", "img": null, "badge": "Premium", "desc": "Chunks of chocolate sandwich cookie folded into rich cream-cheese dough." },
-    { "id": "ck-peanut-butter", "category": "cookies",      "name": "Peanut Butter Cup",        "price": 6.29, "emoji": "🥜", "img": null, "badge": "Premium", "desc": "Peanut butter cookie stuffed with melted chocolate peanut butter cups." },
-    { "id": "ck-red-velvet",    "category": "cookies",      "name": "Red Velvet",               "price": 6.29, "emoji": "❤️", "img": null, "badge": "Premium", "desc": "Decadent red velvet cookie crowned with cream-cheese frosting." },
-
-    { "id": "cp-vanilla",       "category": "cupcakes",     "name": "Vanilla Bean Cupcake",     "price": 4.79, "emoji": "🧁", "img": null, "badge": "", "desc": "Fluffy vanilla bean cake swirled with whipped vanilla buttercream." },
-    { "id": "cp-chocolate",     "category": "cupcakes",     "name": "Chocolate Fudge Cupcake",  "price": 4.79, "emoji": "🍫", "img": null, "badge": "", "desc": "Moist dark chocolate cake topped with rich fudge frosting." },
-    { "id": "cp-strawberry",    "category": "cupcakes",     "name": "Strawberry Cupcake",       "price": 4.79, "emoji": "🍓", "img": null, "badge": "", "desc": "Real strawberry cake with fresh strawberry buttercream." },
-    { "id": "cp-red-velvet",    "category": "cupcakes",     "name": "Red Velvet Cupcake",       "price": 5.29, "emoji": "❤️", "img": null, "badge": "Premium", "desc": "Velvety cocoa cupcake with tangy cream-cheese frosting." },
-    { "id": "cp-cookies-cream", "category": "cupcakes",     "name": "Cookies & Cream Cupcake",  "price": 5.29, "emoji": "🖤", "img": null, "badge": "Premium", "desc": "Chocolate cupcake loaded with cookie crumbles and cookies-and-cream frosting." },
-
-    { "id": "bk-cinn-roll",     "category": "breakfast",    "name": "Cinnamon Roll",            "price": 5.99, "emoji": "🌀", "img": null, "badge": "", "desc": "Soft swirled roll with brown-sugar cinnamon and cream-cheese glaze." },
-    { "id": "bk-croissant",     "category": "breakfast",    "name": "Butter Croissant",         "price": 5.99, "emoji": "🥐", "img": null, "badge": "", "desc": "Flaky, golden laminated croissant baked fresh each morning." },
-    { "id": "bk-muffin",        "category": "breakfast",    "name": "Blueberry Muffin",         "price": 5.99, "emoji": "🫐", "img": null, "badge": "", "desc": "Tender muffin bursting with blueberries and a crunchy streusel top." },
-    { "id": "bk-scone",         "category": "breakfast",    "name": "Vanilla Bean Scone",       "price": 5.99, "emoji": "🍯", "img": null, "badge": "", "desc": "Buttery scone with a sweet vanilla bean glaze." },
-
-    { "id": "db-brownie",       "category": "dessert-bars", "name": "Fudge Brownie",            "price": 5.89, "emoji": "🍫", "img": null, "badge": "", "desc": "Dense, fudgy brownie with a crackly top and chocolate chunks." },
-    { "id": "db-blondie",       "category": "dessert-bars", "name": "Brown Butter Blondie",     "price": 5.89, "emoji": "🟫", "img": null, "badge": "", "desc": "Chewy brown-butter blondie studded with white chocolate." },
-    { "id": "db-lemon",         "category": "dessert-bars", "name": "Lemon Bar",                "price": 6.49, "emoji": "🍋", "img": null, "badge": "", "desc": "Zesty lemon curd over a buttery shortbread crust." },
-    { "id": "db-smores",        "category": "dessert-bars", "name": "S'mores Bar",              "price": 6.99, "emoji": "🔥", "img": null, "badge": "", "desc": "Graham crust, melted chocolate and toasted marshmallow." },
-    { "id": "db-cheesecake",    "category": "dessert-bars", "name": "Cheesecake Bar",           "price": 7.49, "emoji": "🍰", "img": null, "badge": "Premium", "desc": "Creamy New York cheesecake on a graham crust with berry swirl." },
-
-    { "id": "box-4",            "category": "boxes",        "name": "Bliss Box of 4",           "price": 24.00, "emoji": "🎁", "img": null, "badge": "Build your own", "desc": "Mix any 4 treats. The perfect shareable gift box." },
-    { "id": "box-6",            "category": "boxes",        "name": "Bliss Box of 6",           "price": 34.00, "emoji": "🎁", "img": null, "badge": "Build your own", "desc": "Mix any 6 treats — great for the office or a small celebration." }
+    {
+      "id": "ck-classic-chip",
+      "category": "cookies",
+      "name": "Classic Chip",
+      "price": 4.5,
+      "emoji": "🍪",
+      "img": null,
+      "badge": "Signature",
+      "desc": "A soft brown sugar dough with a rich, caramel-like sweetness, balanced by smooth semi-sweet chocolate chips for a perfectly classic treat.",
+      "featured": true
+    },
+    {
+      "id": "ck-party-cake",
+      "category": "cookies",
+      "name": "Party Cake",
+      "price": 4.5,
+      "emoji": "🎉",
+      "img": null,
+      "badge": "Signature",
+      "desc": "A celebration in every bite! Buttery cake-flavored dough packed with white chocolate chips and rainbow sprinkles, topped with a swirl of fluffy whipped vanilla buttercream.",
+      "featured": true
+    },
+    {
+      "id": "ck-doodle",
+      "category": "cookies",
+      "name": "Doodle",
+      "price": 4.5,
+      "emoji": "🌀",
+      "img": null,
+      "badge": "Signature",
+      "desc": "A soft, spiced delight infused with cinnamon and rolled in cinnamon sugar, topped with a swirl of creamy, tangy cream cheese frosting.",
+      "featured": true
+    },
+    {
+      "id": "ck-salty-caramel-pistachio",
+      "category": "cookies",
+      "name": "Salty Caramel Pistachio",
+      "price": 4.5,
+      "emoji": "🥧",
+      "img": null,
+      "badge": "Signature",
+      "desc": "A rich, nutty pistachio cookie layered with deep brown butter notes, stuffed with a smooth salted caramel center, and topped with flaky sea salt."
+    },
+    {
+      "id": "ck-blueberry-pastry",
+      "category": "cookies",
+      "name": "Blueberry Pastry",
+      "price": 4.95,
+      "emoji": "🫐",
+      "img": null,
+      "badge": "Specialty",
+      "desc": "A soft, buttery cookie base packed with fresh blueberry compote, topped with whipped blueberry buttercream and a sprinkle of powdered sugar."
+    },
+    {
+      "id": "ck-cookies-ice-cream",
+      "category": "cookies",
+      "name": "Cookies & Ice Cream",
+      "price": 4.95,
+      "emoji": "🖤",
+      "img": null,
+      "badge": "Specialty",
+      "desc": "A soft and chewy cookies & cream cookie packed with crushed Oreo pieces, topped with rich cookies & cream buttercream and finished with a classic Oreo on top."
+    },
+    {
+      "id": "ck-toffee-oat",
+      "category": "cookies",
+      "name": "Toffee Oat",
+      "price": 4.95,
+      "emoji": "🍪",
+      "img": null,
+      "badge": "Specialty",
+      "desc": "A warm, buttery oatmeal cookie loaded with sweet toffee pieces and rich chocolate chips, baked until soft and chewy with perfectly crisp edges."
+    },
+    {
+      "id": "ck-vegan-gf-chip",
+      "category": "cookies",
+      "name": "Vegan / Gluten-Friendly Chocolate Chip",
+      "price": 4.5,
+      "emoji": "🌱",
+      "img": null,
+      "badge": "Vegan · GF",
+      "desc": "A soft, chewy chocolate chip cookie made vegan and gluten-free, loaded with rich chocolate chips and finished with a sprinkle of sea salt."
+    },
+    {
+      "id": "ck-weekly-nutella-lava",
+      "category": "cookies",
+      "name": "Nutella Lava",
+      "price": 4.95,
+      "emoji": "🍫",
+      "img": null,
+      "badge": "This Week Only",
+      "desc": "This week's small batch (Jun 9–14). A crisp-edged, chewy double chocolate chip cookie with a molten core of warm, gooey Nutella that oozes with hazelnut-chocolate goodness.",
+      "featured": true
+    },
+    {
+      "id": "db-gooey-butter",
+      "category": "dessert-bars",
+      "name": "Gooey Butter Bar",
+      "price": 5.5,
+      "emoji": "🟨",
+      "img": null,
+      "badge": "Signature",
+      "desc": "A soft, buttery crust cradling a thick layer of velvety, sweet filling. Delicately crackled on top and finished with a dusting of powdered sugar."
+    },
+    {
+      "id": "db-cheesecake-brownie",
+      "category": "dessert-bars",
+      "name": "Cheesecake Brownie",
+      "price": 5.5,
+      "emoji": "🍫",
+      "img": null,
+      "badge": "Signature",
+      "desc": "The perfect mix of rich, fudgy brownie and creamy cheesecake — a chocolate brownie base topped with a smooth layer of cheesecake, swirled together."
+    },
+    {
+      "id": "db-biscoff-blondie",
+      "category": "dessert-bars",
+      "name": "Biscoff Blondie",
+      "price": 5.5,
+      "emoji": "🟫",
+      "img": null,
+      "badge": "Signature",
+      "desc": "A rich, buttery blondie swirled with Biscoff cookies and white chocolate chips, topped with a crunchy Biscoff cookie and a generous cookie butter drizzle."
+    },
+    {
+      "id": "db-cookie-dough-brownie",
+      "category": "dessert-bars",
+      "name": "Cookie Dough Brownie",
+      "price": 5.95,
+      "emoji": "🍪",
+      "img": null,
+      "badge": "Specialty",
+      "desc": "A rich, fudgy brownie layered with our signature edible cookie dough, topped with smooth vanilla buttercream and finished with rainbow sprinkles."
+    },
+    {
+      "id": "cp-vanilla-bean",
+      "category": "cupcakes",
+      "name": "Vanilla Bean",
+      "price": 4.75,
+      "emoji": "🧁",
+      "img": null,
+      "badge": "Signature",
+      "desc": "A classic favorite — soft, fluffy vanilla cake topped with a swirl of creamy vanilla buttercream and white sprinkles. Light, sweet, and perfectly delicious."
+    },
+    {
+      "id": "cp-double-chocolate",
+      "category": "cupcakes",
+      "name": "Double Chocolate",
+      "price": 4.75,
+      "emoji": "🍫",
+      "img": null,
+      "badge": "Signature",
+      "desc": "Moist chocolate cake topped with smooth, decadent chocolate buttercream and rainbow sprinkles. Full of deep cocoa flavor for chocolate lovers."
+    },
+    {
+      "id": "cp-gf-vanilla",
+      "category": "cupcakes",
+      "name": "Gluten Free Vanilla",
+      "price": 4.75,
+      "emoji": "🌱",
+      "img": null,
+      "badge": "Signature · GF",
+      "desc": "A light, fluffy cupcake infused with real vanilla bean, topped with silky vanilla frosting. Proof that gluten-free can still be blissfully indulgent."
+    },
+    {
+      "id": "cp-gf-chocolate",
+      "category": "cupcakes",
+      "name": "Gluten Free Chocolate",
+      "price": 4.75,
+      "emoji": "🌱",
+      "img": null,
+      "badge": "Signature · GF",
+      "desc": "A rich, moist chocolate cupcake made gluten-free, topped with smooth, velvety chocolate frosting and a melt-in-your-mouth finish."
+    },
+    {
+      "id": "cp-red-velvet",
+      "category": "cupcakes",
+      "name": "Red Velvet",
+      "price": 4.75,
+      "emoji": "❤️",
+      "img": null,
+      "badge": "Signature",
+      "desc": "A soft and moist red velvet cake with a hint of cocoa, topped with luscious cream cheese frosting for the perfect balance of sweetness and tang."
+    },
+    {
+      "id": "cp-strawberry",
+      "category": "cupcakes",
+      "name": "Strawberry",
+      "price": 4.75,
+      "emoji": "🍓",
+      "img": null,
+      "badge": "Signature",
+      "desc": "A sweet strawberry cake topped with creamy strawberry buttercream and garnished with fresh strawberries."
+    },
+    {
+      "id": "cp-churro",
+      "category": "cupcakes",
+      "name": "Churro",
+      "price": 5.25,
+      "emoji": "🥨",
+      "img": null,
+      "badge": "Specialty",
+      "desc": "A cinnamon-spiced delight — soft, fluffy cake with warm cinnamon and vanilla, topped with cinnamon-sugar cream cheese buttercream and a dollop of dulce de leche."
+    },
+    {
+      "id": "cp-choc-pb-cup",
+      "category": "cupcakes",
+      "name": "Chocolate PB Cup",
+      "price": 5.25,
+      "emoji": "🥜",
+      "img": null,
+      "badge": "Specialty",
+      "desc": "A rich chocolate cupcake filled with creamy peanut butter, topped with smooth peanut butter frosting and a drizzle of chocolate ganache."
+    },
+    {
+      "id": "dr-iced-coffee",
+      "category": "drinks",
+      "name": "Iced Coffee",
+      "price": 4.95,
+      "emoji": "☕",
+      "img": "/images/products/iced-coffee.webp",
+      "badge": "",
+      "desc": "Smooth cold-brewed coffee over ice with your choice of cream.",
+      "featured": true
+    },
+    {
+      "id": "dr-strawberry-shake",
+      "category": "drinks",
+      "name": "Strawberry Milkshake",
+      "price": 7.49,
+      "emoji": "🥤",
+      "img": "/images/products/strawberry-milkshake.webp",
+      "badge": "Fan favorite",
+      "desc": "Hand-spun strawberry milkshake topped with fresh whipped cream.",
+      "featured": true
+    },
+    {
+      "id": "box-4",
+      "category": "boxes",
+      "name": "Bliss Box of 4",
+      "price": 24,
+      "emoji": "🎁",
+      "img": null,
+      "badge": "Build your own",
+      "desc": "Mix any 4 treats. The perfect shareable gift box."
+    },
+    {
+      "id": "box-6",
+      "category": "boxes",
+      "name": "Bliss Box of 6",
+      "price": 34,
+      "emoji": "🎁",
+      "img": null,
+      "badge": "Build your own",
+      "desc": "Mix any 6 treats — great for the office or a small celebration."
+    }
   ]
 }
