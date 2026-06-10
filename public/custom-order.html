@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Orders — Blissri the Bakeshoppe</title>
+  <meta name="description" content="Request a custom Bliss Box, cake or treat order from Blissri the Bakeshoppe." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧁</text></svg>" />
+</head>
+<body>
+  <header class="site-header" id="site-header"></header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Custom Orders</h1>
+      <p>Dreaming up something special? Let's bake it together.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a> / Custom Orders</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <div class="info-card">
+          <h3 style="margin-bottom:14px;">How custom orders work</h3>
+          <ul class="about-points">
+            <li><span class="ico">📝</span><span>Tell us the occasion, flavours, quantity and pickup date.</span></li>
+            <li><span class="ico">💬</span><span>We'll reply with a quote and confirm the details.</span></li>
+            <li><span class="ico">🧁</span><span>Pick up your treats fresh in Lantana.</span></li>
+          </ul>
+          <p class="muted" style="margin-top:18px;">Please request custom orders at least 48 hours in advance. Larger orders (50+ pieces) need 3–5 days.</p>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <form class="form-card" id="order-form" novalidate>
+          <h3 style="margin-bottom:6px;">Request a custom order</h3>
+          <p class="muted" style="margin-bottom:22px; font-size:.92rem;">We'll get back to you within one business day.</p>
+          <div class="form-row">
+            <div class="field"><label for="name">Name *</label><input type="text" id="name" name="name" required /><span class="error">Please enter your name.</span></div>
+            <div class="field"><label for="phone">Phone</label><input type="tel" id="phone" name="phone" /><span class="error">Please enter a valid phone number.</span></div>
+          </div>
+          <div class="field"><label for="email">Email *</label><input type="email" id="email" name="email" required /><span class="error">Please enter a valid email address.</span></div>
+          <div class="form-row">
+            <div class="field"><label for="occasion">Occasion</label>
+              <select id="occasion" name="occasion"><option>Birthday</option><option>Wedding</option><option>Corporate / office</option><option>Holiday</option><option>Just because</option><option>Other</option></select>
+            </div>
+            <div class="field"><label for="date">Pickup date</label><input type="date" id="date" name="date" /></div>
+          </div>
+          <div class="field"><label for="message">Order details *</label><textarea id="message" name="message" placeholder="What would you like? Flavours, quantity, theme, colours…" required></textarea><span class="error">Please add a few details.</span></div>
+          <button type="submit" class="btn btn-primary btn-block">Send Request</button>
+          <div class="form-note" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="js/site.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/forms.js"></script>
+</body>
+</html>

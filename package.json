@@ -1,0 +1,19 @@
+{
+  "name": "blissri-bakeshoppe",
+  "version": "1.0.0",
+  "description": "Blissri the Bakeshoppe — Crumbl-style online ordering site with Square checkout.",
+  "main": "server/server.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node server/server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}

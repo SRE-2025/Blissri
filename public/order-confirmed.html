@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Confirmed — Blissri the Bakeshoppe</title>
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧁</text></svg>" />
+</head>
+<body>
+  <header class="site-header" id="site-header"></header>
+
+  <section class="section">
+    <div class="container confirm-wrap">
+      <div class="confirm-card reveal">
+        <div class="big-emoji">🎉</div>
+        <h1>Thank you for your order!</h1>
+        <p class="muted" style="margin:14px 0 8px;">Your treats are being prepared fresh in our Lantana kitchen.</p>
+        <p id="demoNote" class="muted" hidden style="background:#eef6ff;color:#2563a8;padding:12px 16px;border-radius:12px;margin:16px 0;"></p>
+        <p>We'll have everything boxed and ready for pickup. See you soon! 🛍️</p>
+        <div style="margin-top:28px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+          <a class="btn btn-primary" href="order.html">Order more treats</a>
+          <a class="btn btn-outline" href="index.html">Back home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="js/site.js"></script>
+  <script src="js/cart.js"></script>
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      if (params.get("demo") === "1") {
+        var note = document.getElementById("demoNote");
+        if (note) { note.hidden = false; note.textContent = "Demo mode: Square isn't connected yet, so no real payment was taken. Add your Square keys (see DEPLOY.md) to take live orders."; }
+      }
+    })();
+  </script>
+</body>
+</html>
